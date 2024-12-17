@@ -1,0 +1,90 @@
+---
+import Circle from "../components/circle.astro";
+import { Icon } from 'astro-icon/components'
+---
+
+<header class="">
+    <nav class="pt-14">
+        <div class="bg-[#0f1f3157]">
+            <div
+                class="container mx-auto lg:flex items-center h-16 justify-between hidden"
+            >
+                <div>
+                    <a class="text-white font-semibold hover:text-[#40ac44] transition-all" target="_blank" href="https://radiogaviotafm.com/">
+                        <ul class="flex items-center">
+                            <p class="">Escúchanos con la mejor música en nuestra web de Radio Gaviota</p>
+                        <Icon class="ml-2 size-6" name="flowbite:arrow-right-outline" />
+                    </ul>
+                    </a>
+
+                </div>
+                <div class="flex items-center">
+                    <a class="text-white hover:text-[#40ac44] transition-all" target="_blank" href="https://www.facebook.com/RadioGaviota">
+                        <Icon class="mr-1 size-6" name="flowbite:facebook-solid" />
+                    </a>
+                    <a class="text-white hover:text-[#40ac44] transition-all" target="_blank" href="https://www.instagram.com/radiogaviota/">
+                        <Icon class="mr-1 size-6" name="flowbite:instagram-solid" />
+                    </a>
+                    <a class="text-white hover:text-[#40ac44] transition-all" target="_blank" href="https://x.com/radio_gaviota">
+                        <Icon class="mr-1 size-6" name="flowbite:twitter-solid" />
+                    </a>
+                    <a class="text-white hover:text-[#40ac44] transition-all" target="_blank" href="https://wa.link/kj40j8">
+                        <Icon class="mr-1 size-6" name="flowbite:whatsapp-solid" />
+                    </a>
+
+                    <div class="flex items-center ml-2">
+                        <div class="mr-1"><Circle/></div>
+                        <p class="text-white text-xs font-semibold">AL AIRE</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="flex flex-col items-center justify-center">
+        <div class="md:flex block">
+            <img
+                src="img/logogaviota.png"
+                width="500"
+                height="300"
+                alt=""
+            />
+        </div>
+
+        <div class="block md:flex mt-8">
+            <div>
+                <a href="https://play.google.com/store/apps/details?id=gaviota.tv4" target="_blank" type="button" class="text-gray-900 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 me-2 mb-2">
+                    Descarga para Google Play
+                    </a>
+            </div>
+            <div>
+                <a href="https://apps.apple.com/app/gaviota-tv/id6739304506" target="_blank" type="button" class="text-gray-900 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 me-2 mb-2">
+                    Descarga para App Store
+                    </a>
+            </div>
+
+        </div>
+
+        <div>
+            <p class="underline text-white text-xs mt-12 mb-10">
+                No te pierdas de nada y siguenos en todas nuestras redes sociales
+            </p>
+        </div>
+    </div>
+</header>
+
+<style>
+    header {
+        background-image: linear-gradient(
+                rgba(0, 0, 0, 0.3),
+                rgba(0, 0, 0, 0.3)
+            ),
+            url(/img/rafael-garcin-0L2ncEzrBk4-unsplash.jpg);
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+
+</style>
